@@ -175,6 +175,25 @@
     text-align: center;
   }
 
+  .finals-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: transparent;
+    border: 2px solid var(--red);
+    color: var(--ink);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+
+  .finals-btn:hover {
+    background: var(--red);
+    transform: translateY(-2px);
+  }
+
   .finals-label {
     font-size: 11px;
     letter-spacing: 0.3em;
@@ -282,8 +301,8 @@
       <a class="step step-link" href="https://app.evento.so/e/evt_R61SaJsFTEtYnANY" target="_blank" rel="noopener">
         <div class="num">1</div>
         <div>
-          <h3>RSVP to MK64++ <span class="arrow">→</span></h3>
-          <p>You're at the event - RSVP to MK64++ in the Evento app.</p>
+          <h3>Click to RSVP to MK64++ <span class="arrow">→</span></h3>
+          <p>You're at the event - RSVP to MK64++ in Evento.</p>
         </div>
       </a>
 
@@ -317,10 +336,11 @@
     </p>
 
     <div class="finals">
-      <div class="finals-label">Grand Finals</div>
+      <div class="finals-label">Tournament Finals</div>
       <h2 class="finals-stage">Nakamoto Stage</h2>
       <div class="finals-time">Wednesday · 4:40 PM</div>
       <p class="finals-desc">Top 4 on the leaderboard advance.</p>
+      <a class="finals-btn" href="https://vegas.dplus.plus" target="_blank" rel="noopener">View the leaderboard →</a>
     </div>
 
     <a class="store" href="https://theoriginalbhd.com/bitcoin" target="_blank" rel="noopener">
