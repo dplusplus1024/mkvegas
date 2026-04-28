@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +27,14 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrap { flex: 1; }
+
   .checker {
     height: 16px;
     background: repeating-conic-gradient(#fff 0% 25%, #000 0% 50%) 0 / 16px 16px;
@@ -52,7 +61,7 @@
   .logo {
     display: block;
     width: 100%;
-    max-width: 480px;
+    max-width: 380px;
     height: auto;
     margin: 0 auto;
   }
@@ -139,6 +148,13 @@
     color: #c0c0c0;
   }
 
+  .step-note {
+    font-size: 12px !important;
+    color: var(--dim) !important;
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+
   .payout {
     border-top: 2px solid var(--red);
     padding-top: 32px;
@@ -190,7 +206,7 @@
   }
 
   .finals-note {
-    font-size: 13px;
+    font-size: 12px;
     color: var(--dim);
     line-height: 1.5;
     max-width: 420px;
@@ -222,8 +238,8 @@
   }
 
   .store-logo {
-    width: 140px;
-    height: 60px;
+    width: 180px;
+    height: 76px;
     margin: 0 auto 16px;
     background-color: var(--ink);
     -webkit-mask: url('https://theoriginalbhd.com/logo.svg') no-repeat center / contain;
@@ -239,10 +255,16 @@
 
   footer {
     text-align: center;
-    padding: 32px 24px 48px;
+    padding: 32px 24px;
     color: var(--dim);
     font-size: 12px;
     letter-spacing: 0.15em;
+  }
+
+  footer .heart {
+    color: var(--red);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
   }
 </style>
 </head>
@@ -253,7 +275,6 @@
   <div class="wrap">
 
     <header class="hero">
-      <div class="presents">D++ ✕ BHD PRESENT</div>
       <img class="logo" src="mk64-logo.svg" alt="MK64++ World Championship" />
     </header>
 
@@ -261,8 +282,8 @@
       <a class="step step-link" href="https://app.evento.so/e/evt_R61SaJsFTEtYnANY" target="_blank" rel="noopener">
         <div class="num">1</div>
         <div>
-          <h3>RSVP on Evento <span class="arrow">→</span></h3>
-          <p>You're at the event — RSVP to Satoshi Speedway in the Evento app.</p>
+          <h3>RSVP to MK64++ <span class="arrow">→</span></h3>
+          <p>You're at the event - RSVP to MK64++ in the Evento app.</p>
         </div>
       </a>
 
@@ -300,18 +321,19 @@
       <h2 class="finals-stage">Nakamoto Stage</h2>
       <div class="finals-time">Wednesday · 4:40 PM</div>
       <p class="finals-desc">Top 4 on the leaderboard advance.</p>
-      <p class="finals-note">Phone number is optional at registration, but we need one to reach you if you qualify for the finals.</p>
     </div>
 
     <a class="store" href="https://theoriginalbhd.com/bitcoin" target="_blank" rel="noopener">
-      <div class="store-label">Merch</div>
+      <div class="store-label">Official Store</div>
       <div class="store-logo" role="img" aria-label="The Original BHD"></div>
-      <div class="store-cta">Shop the web store →</div>
+      <div class="store-cta">Shop the merch →</div>
     </a>
 
   </div>
 
-  <footer>BUILT BY D++ · POWERED BY LIGHTNING</footer>
+  <footer>Made with ❤️ by D++</footer>
+
+  <div class="checker"></div>
 
 </body>
 </html>
